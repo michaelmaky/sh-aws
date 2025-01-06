@@ -1,0 +1,24 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "rds-db:connect"
+            ],
+            "Resource": [
+                "arn:aws:rds-db:ap-southeast-1:123456789012:dbuser:db-ABCDEFG123456789012HIJKLMN/db_user"
+            ]
+        },
+        {
+            "Action": [
+                "ec2:Stop*",
+                "ec2:Start*",
+                "ec2:ReportInstanceStatus",
+                "ec2:DescribeInstances"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+}
